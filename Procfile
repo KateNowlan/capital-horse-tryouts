@@ -1,1 +1,1 @@
-web: gunicorn capital-stud-tryouts.wsgi
+web: gunicorn tryouts.wsgi
