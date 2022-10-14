@@ -1,1 +1,1 @@
-web: gunicorn capital-horse-tryouts.wsgi
+web: gunicorn capital-stud-tryouts.wsgi
