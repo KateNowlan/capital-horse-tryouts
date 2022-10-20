@@ -48,7 +48,7 @@ class PostDetail(View):
             comment.post = post
             comment.save()
         else:
-            comment_form = CommentForm()        
+            comment_form = CommentForm()
 
         return render(
             request,
@@ -60,7 +60,7 @@ class PostDetail(View):
                 "liked": liked,
                 "comment_form": CommentForm()
             },
-        )              
+        )        
 
 class PostLike(View):
 
