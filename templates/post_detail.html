@@ -16,7 +16,7 @@
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://capitalstud.com/userfiles/image/capital_auction_1660123374.jpg" width="100%">
                 {% else %}
-                <img src="{{ post.featured_image.url }}" width="100%">
+                <img src="{{ post.featured_image.url }}" width="100%" height="80%">
                 {% endif %}
             </div>
         </div>
@@ -104,7 +104,8 @@
 
             {% if user.is_authenticated %}
 
-            <h3>Leave a comment:</h3>
+            <p>Leave a comment or book your tryout slot:please leave your name and number and we will contact you,or
+                give us your date,time and what horses you want to try and we will book you in:</p>
             <p>Posting as:{{ user.username }}</p>
             <form method="post" style="margin-top:1.3em">
                 {{ comment_form | crispy }}
