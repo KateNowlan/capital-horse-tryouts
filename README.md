@@ -1,108 +1,120 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Capital Stud Tryouts Auction List 2022
 
-Welcome KateNowlan,
+This is a blog/website to present the horses we have on auction to try out for 2022. On there, as a superuser/admin, I can make posts about each auction horse on the list and autheticated users can comment and like posts as well. It's overall quite simple in it's design but it works very well in it's design as intended and is interactive which is great for the prospective clients.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Home page](./media/home-page.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Business
 
-## Gitpod Reminders
+The Business goals describe the expected user and site owner goals - these drive the design, development, and deployment of the blog/website application. The fulfillment of these goals determine the success of the application.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## External Users
 
-`python3 -m http.server`
+The external users are potential and actual customers of Capital Stud. They are looking for information on the various horses being offered on auction for 2022, as well as being able to contact us to book a tryout of any of the horses.
 
-A blue button should appear to click: _Make Public_,
+## Site Owner
 
-Another blue button should appear to click: _Open Browser_.
+The site owner is looking to attract potential customers and be able to manage customer tryout bookings and contact requests in order to engage to the users.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Features 
 
-A blue button should appear to click: _Make Public_,
+### Existing Features
 
-Another blue button should appear to click: _Open Browser_.
+- __Navigation Bar__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  There's a nav bar at the top of the screen. You can go to the homepage, log in/out, sign up.
 
-To log into the Heroku toolbelt CLI:
+![Nav Bar](./media/nav-bar.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __The Blog Posts__
 
-------
+  You can see all the different blog posts that have been made, I as admin add these posts manually through Django Admin. The posts have the image of each horse, and if you click on each one it takes you to the post with more information.From here, you can see the likes and comments on a post as well. 
 
-## Release History
+![Blog Posts](./media/blog-posts.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __Login Page__
+  This is where users who have made an account can sign in and from there they can comment on posts, like posts and will have the option to contact me as well. 
+ 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Login](./media/signin.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- __Sign Up page__
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  Before the user can login, they must register and sign up to the website. They will have to enter a username and secure password. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Sign Up](./media/signup.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __Logout__
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  If the user wants, they also have the option to sign out of their account too. You will be asked if you are sure you want to leave the site.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Logout](./media/sign-out.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+ __A Blog Post__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  So here is a blog post itself: The name of the horse and it's image are held within a masthead at the top and the information of the horse itself is below.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![A blog post](./media/a-post.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __Blog Post Comments__ 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  Users can see their comments and other people's comments, as well as how long ago they were posted. They can also edit them and delete them from here as well. To make a comment a user must be signed in on their account. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Comments](./media/comments.png)
 
-------
+# User Stories
 
-## FAQ about the uptime script
+The following user stories have been created to ensure the goals of the users and owner are met.
 
-**Why have you added this script?**
+| User Story | Goal |
+| --- | --- |
+| **User Story 001:** As a user i can view a post so that i may select one to read | identifying horses on auction |
+| **User Story 002:** As a user i can open a post so that i may see all its details | Finding more information on each horse on the auction |
+| **User Story 003:** As a site user i can view likes so that users and admin can see which posts are liked | likes on blog posts |
+| **User Story 004:** As a site user i can register an account so that i can comment and like and be interactive with the site | Ability to register,sign in,log out |
+| **User Story 005:** As a site user i can comment on photos so that i can add my opinion to which horses i like | Ability to comment on blog posts |
+| **User Story 006:** As a site user i can like or unlike a post so that i can be interactive with the content | Ability to like/unlike blog posts |
+| **User Story 007:** As a site admin i can create, read, update and delete posts so that i can manage content on the site | Ability for admin to manage posts |
+| **User Story 008:** As a site admin i can approve or dismiss comments so that we only have comments benefical to the site | Ability for admin to approve/dismiss posts|
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Administrators
 
-**How will this affect me?**
+An administrator is a manager of the Capital Stud page. This requires the use of a superuser account username and password, as this is not public-facing information.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- ![Administration login Page](./media/admin-login.png) with:
+    - the ability for the admin superuser to log in
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- ![Administration home Page](./media/admin-home.png) with:
+    - the ability to create, view, update and delete the auction horse information visible on the public site.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+# Technology
 
-**So….?**
+## Key Technology Used
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The following key technologies and languages have been used as part of this website:
 
-**Can I opt out?**
+- [HTML 5](https://en.wikipedia.org/wiki/HTML): HyperText Markup Language, the standard markup language for documents designed to be displayed in a web browser
+- [CSS 3](https://en.wikipedia.org/wiki/CSS): style sheet language used for describing the presentation of a document
+- [JavaScript](https://www.javascript.com/): high-level, often just-in-time compiled language
+- [jQuery](https://jquery.com/): JavaScript library
+- [Python](https://www.python.org/): high-level, general-purpose programming language
+- [Django](https://www.djangoproject.com/): Python-based open-source web framework
+- [Postgresql](https://www.postgresql.org/): open-source database to hold back-end data
+- [GitHub](https://github.com/): code repository
+- [GitPod](https://www.gitpod.io/): integrated development environment (IDE)
+- [Heroku](https://www.heroku.com/): deployment of the website and application
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### User Story Board
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+A user story board was used to assist with the organisation of building the website. This included the user stories representing the key features that should be implemented. These were sorted into the following lists:
 
-**Anything more?**
+- To Do: features where no progress had been started.
+- In Progress: features where progress has commenced, but not completed.
+- Done: features that have been fully implemented.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Image of board](./media/user-story.png)
 
----
+Each user story started in the To Do list, and was moved through to In Progress and Done as development continued. This assisted with ensuring the work was performed in an organised manner.
 
-Happy coding!
