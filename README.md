@@ -118,3 +118,45 @@ A user story board was used to assist with the organisation of building the webs
 
 Each user story started in the To Do list, and was moved through to In Progress and Done as development continued. This assisted with ensuring the work was performed in an organised manner.
 
+# Testing
+
+## Manual Testing
+
+Manual use cases have been run to test the functionality of the website.
+
+The tables below show the user stories, the associated use cases, the task script followed for the test, and whether this passed or failed. These have been split by user-related and owner-related functionality.
+
+### User Testing
+
+| User Story -> Tasks | Pass/Fail |
+| --- | --- |
+| **User Story 001:** As a user i can view a post so that i may select one to read | PASS |
+| + > **Task 1:** Open the home page -> the posts should be visible showing all the horses available | PASS |
+
+| **User Story 002:** As a user i can open a post so that i may see all its details | PASS |
+| + > **Task 1:** Open a post -> the post should be visible showing the information on the horse selected | PASS |
+
+| **User Story 003:** As a site user i can view likes so that users and admin can see which posts are liked | PASS |
+| + > **Task 1:** On the main page and selected posts -> the likes should be visible on each post | PASS |
+
+| **User Story 004:** As a site user i can register an account so that i can comment and like and be interactive with the site | PASS |
+| + > **Task 1:** Open the home page -> you should be able to sign in,login in and logout | PASS |
+
+| **User Story 005:** As a site user i can comment on photos so that i can add my opinion to which horses i like | PASS |
+| + > **Task 1:** Open a blog post -> you should be able to comment on the post | PASS |
+
+| **User Story 006:** As a site user i can like or unlike a post so that i can be interactive with the content | PASS |
+| + > **Task 1:** Open a blog post -> you should be able to like/unlike a blog post | PASS |
+
+| **User Story 007:** As a site admin i can create, read, update and delete posts so that i can manage content on the site | PASS |
+| + > **Task 1:** Open the django admin page -> admin should be able to manage all post activity | PASS |
+
+| **User Story 008:** As a site admin i can approve or dismiss comments so that we only have comments benefical to the site | PASS |
+| + > **Task 1:** Open the django admin page -> admin should be able to approve/dismiss comments made by the public | PASS |
+
+### Bugs
+
+No unfixed bugs have been currently identified in the code.
+
+
+
