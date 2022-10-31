@@ -158,5 +158,27 @@ The tables below show the user stories, the associated use cases, the task scrip
 
 No unfixed bugs have been currently identified in the code.
 
+## Code Validation
+
+### HTML 
+[W3C HTML Validator](https://validator.w3.org/)
+
+![W3C HTML](./media/w3c-checker.png)
+
+### CSS
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+![W3C CSS](./media/css-checker.png)
+
+### JavaScript
+[JSHint Validator](https://jshint.com/)
+
+![JSHint](./media/jshint-checker.png)
+
+
+
+
+
+
 
 

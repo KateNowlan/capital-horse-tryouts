@@ -17,7 +17,7 @@
                                 <img class="card-img-top"
                                     src="https://capitalstud.com/userfiles/image/capital_auction_1660123374.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src="{{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
@@ -56,4 +56,4 @@
     </nav>
     {% endif %}
 </div>
-{%endblock%}
+{% endblock %}
